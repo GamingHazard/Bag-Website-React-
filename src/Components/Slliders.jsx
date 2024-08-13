@@ -20,7 +20,7 @@ function Slliders() {
     <div>
       {/* Horizontal Scrollable Container */}
       <div
-        className="  w3-mobile"
+        className="  w3-mobile  w3-animate-bottom"
         style={{
           display: "flex",
           flexDirection: "row",
@@ -30,7 +30,10 @@ function Slliders() {
           padding: "10px 0", // Added padding to give some space
         }}
       >
-        <div style={{ display: "inline-block", width: "auto" }}>
+        <div
+          className="w3-mobile"
+          style={{ display: "inline-block", width: "auto" }}
+        >
           <BagCards
             BagName="Elegant Handbag"
             BagMaterial="Leather"
@@ -39,7 +42,10 @@ function Slliders() {
             BagImg={bag1}
           />
         </div>
-        <div style={{ display: "inline-block", width: "auto" }}>
+        <div
+          className="w3-mobile"
+          style={{ display: "inline-block", width: "auto" }}
+        >
           <BagCards
             BagName="Stylish Backpack"
             BagMaterial="Nylon"
@@ -48,7 +54,10 @@ function Slliders() {
             BagImg={bag2}
           />
         </div>
-        <div style={{ display: "inline-block", width: "auto" }}>
+        <div
+          className="w3-mobile"
+          style={{ display: "inline-block", width: "auto" }}
+        >
           <BagCards
             BagName="Classic Wallet"
             BagMaterial="Leather"
@@ -57,7 +66,10 @@ function Slliders() {
             BagImg={bag3}
           />
         </div>
-        <div style={{ display: "inline-block", width: "auto" }}>
+        <div
+          className="w3-mobile"
+          style={{ display: "inline-block", width: "auto" }}
+        >
           <BagCards
             BagName="Classic Wallet"
             BagMaterial="Leather"
@@ -66,7 +78,10 @@ function Slliders() {
             BagImg={bag4}
           />
         </div>
-        <div style={{ display: "inline-block", width: "auto" }}>
+        <div
+          className="w3-mobile"
+          style={{ display: "inline-block", width: "auto" }}
+        >
           <BagCards
             BagName="Classic Wallet"
             BagMaterial="Leather"

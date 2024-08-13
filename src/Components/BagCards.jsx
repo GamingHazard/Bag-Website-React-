@@ -5,7 +5,7 @@ import { FaBookmark, FaPlus } from "react-icons/fa";
 function BagCards({ imgStyle, BagName, BagMaterial, BagColor, price, BagImg }) {
   return (
     <div
-      className="w3-card w3-margin w3-mobile w3-round-medium w3-ripple w3-hover-opacity"
+      className="w3-card w3-margin w3-animate-right w3-mobile w3-round-medium w3-ripple w3-hover-opacity"
       style={{
         width: 400,
         height: 400,
