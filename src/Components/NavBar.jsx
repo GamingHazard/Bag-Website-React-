@@ -24,7 +24,7 @@ const NavBar = () => {
       className="w3-mobile w3-bar w3-black w3-padding"
     >
       <div className="w3-mobile w3-bar-item">
-        <h1>BAGS</h1>
+        <h1 style={{ fontWeight: "bold" }}>BAGS</h1>
       </div>
       <div
         className="w3-right w3-hide-small w3-bar-item"
@@ -45,9 +45,9 @@ const NavBar = () => {
         <Link style={linkStyle("/store")} to="/store">
           Store
         </Link>
-        <Link style={linkStyle("/dashboard")} to="/dashboard">
+        {/* <Link style={linkStyle("/dashboard")} to="/dashboard">
           Dashboard
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

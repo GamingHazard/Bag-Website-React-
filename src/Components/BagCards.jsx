@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "w3-css/w3.css";
-import { FaBookmark, FaPlus } from "react-icons/fa";
+import { FaPlus, FaMinus } from "react-icons/fa";
 
 function BagCards({ imgStyle, BagName, BagMaterial, BagColor, price, BagImg }) {
+  const [isAdded, setIsAdded] = useState(false);
+
+  const handleToggle = () => {
+    setIsAdded(!isAdded);
+  };
+
   return (
     <div
       className="w3-card w3-margin w3-animate-right w3-mobile w3-round-medium w3-ripple w3-hover-opacity"
@@ -45,7 +51,28 @@ function BagCards({ imgStyle, BagName, BagMaterial, BagColor, price, BagImg }) {
         <span>
           <b>Price :</b>
           <span style={{ color: "black" }}>{price} </span>
-          <FaPlus className="w3-ripple w3-right" size={20} color="black" />
+          <span
+            className="w3-right"
+            onClick={handleToggle} // Add toggle function here
+            style={{ cursor: "pointer" }}
+          >
+            {isAdded ? "Remove" : "Add"}
+            {isAdded ? (
+              <FaMinus
+                style={{ marginLeft: 8 }}
+                className="w3-ripple w3-right"
+                size={20}
+                color="black"
+              />
+            ) : (
+              <FaPlus
+                style={{ marginLeft: 8 }}
+                className="w3-ripple w3-right"
+                size={20}
+                color="black"
+              />
+            )}
+          </span>
         </span>
       </div>
     </div>
