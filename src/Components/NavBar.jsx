@@ -27,7 +27,7 @@ const NavBar = () => {
         <h1 style={{ fontWeight: "bold" }}>BAGS</h1>
       </div>
       <div
-        className="w3-right w3-hide-small w3-bar-item"
+        className="w3-right  w3-mobile w3-bar-item"
         style={{
           display: "flex",
           justifyContent: "space-evenly",
@@ -35,14 +35,14 @@ const NavBar = () => {
           marginTop: 30,
         }}
       >
-        <Link style={linkStyle("/")} to="/">
+        <Link className="w3-mobile" style={linkStyle("/")} to="/">
           Home
         </Link>
 
-        <Link style={linkStyle("/login")} to="/login">
+        <Link className="w3-mobile" style={linkStyle("/login")} to="/login">
           Login
         </Link>
-        <Link style={linkStyle("/store")} to="/store">
+        <Link className="w3-mobile" style={linkStyle("/store")} to="/store">
           Store
         </Link>
         {/* <Link style={linkStyle("/dashboard")} to="/dashboard">
