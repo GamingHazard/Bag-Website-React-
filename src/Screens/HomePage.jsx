@@ -58,6 +58,7 @@ function HomePage() {
           </h2>
           <p style={{ color: "white", marginTop: 10 }}>We got you buddy 😉👌</p>
           <p
+            className="w3-ripple"
             style={{
               color: "black",
               marginTop: 30,
